@@ -8,93 +8,179 @@
         /* General Styles */
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(120deg, #e0f7fa, #80deea);
+            font-family: 'Roboto', sans-serif;
             color: #333;
+            background: linear-gradient(120deg, #e0f7fa, #80deea);
+            overflow-x: hidden;
         }
+
         h1, h2, h3 {
+            margin: 0;
             text-align: center;
         }
+
         a {
             color: #0288d1;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         /* Header Styles */
         header {
             background: linear-gradient(120deg, #0288d1, #03a9f4);
-            color: #fff;
+            color: white;
             padding: 20px 10px;
             text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
         }
+
         header h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin: 0;
         }
+
         header p {
             font-size: 1.2em;
         }
+
+        .wind-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 150%;
+            background: url('https://i.imgur.com/wZ0Sxsu.png') repeat-x;
+            opacity: 0.3;
+            animation: wind 12s linear infinite;
+        }
+
+        @keyframes wind {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
         /* Main Content Styles */
         main {
             padding: 20px;
             line-height: 1.8;
         }
+
         .content {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
+
         .content h2 {
             color: #01579b;
             border-bottom: 2px solid #03a9f4;
             padding-bottom: 5px;
-            margin-bottom: 10px;
         }
+
+        /* Slideshow Styles */
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 400%;
+        }
+
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+            font-size: 1.5em;
+        }
+
+        .slide:nth-child(1) { background: url('https://i.imgur.com/5f3pO7O.jpg') no-repeat; }
+        .slide:nth-child(2) { background: url('https://i.imgur.com/3dLdmS1.jpg') no-repeat; }
+        .slide:nth-child(3) { background: url('https://i.imgur.com/vIgGG3J.jpg') no-repeat; }
+
+        .slideshow-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .control {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
         /* Footer Styles */
         footer {
             background: #01579b;
-            color: #fff;
-            padding: 10px;
+            color: white;
             text-align: center;
-            position: relative;
+            padding: 15px;
             margin-top: 20px;
+            position: relative;
         }
+
+        footer p {
+            margin: 0;
+        }
+
         footer a {
             color: #80deea;
-        }
-        /* Animation */
-        .wind-animation {
-            animation: moveWaves 10s linear infinite;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 150px;
-            background: url('https://i.imgur.com/Ft7cSlB.png') repeat-x;
-            opacity: 0.8;
-        }
-        @keyframes moveWaves {
-            from { transform: translateX(0); }
-            to { transform: translateX(-100%); }
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="wind-animation"></div>
         <h1>Structural Reliability in Cyclonic Winds</h1>
         <p>Advancing Our Understanding of Extreme Wind Impacts</p>
     </header>
+
     <main>
         <section class="content">
             <h2>Project Overview</h2>
             <p><strong>Linkage Project LP180100234</strong></p>
             <p>Researchers at Monash University’s FLAIR lab have made groundbreaking strides in understanding structural reliability under cyclonic wind conditions. This research contributes significantly to improving the resilience of infrastructure exposed to extreme winds.</p>
         </section>
+
+        <section class="slideshow">
+            <div class="slides">
+                <div class="slide">Cyclonic Winds - Dynamics and Impact</div>
+                <div class="slide">Advanced Testing and Simulation</div>
+                <div class="slide">Safer Structural Designs</div>
+            </div>
+            <div class="slideshow-controls">
+                <button class="control" id="prev">&#10094;</button>
+                <button class="control" id="next">&#10095;</button>
+            </div>
+        </section>
+
         <section class="content">
             <h2>Key Research Insights</h2>
             <ul>
@@ -104,14 +190,7 @@
                 <li><strong>Refinement of Standards:</strong> Improved structural codes for better safety and efficiency.</li>
             </ul>
         </section>
-        <section class="content">
-            <h2>Key Publications</h2>
-            <ul>
-                <li><em>Aerodynamics of Two Rough Circular Cylinders</em> - Physics of Fluids, 2024.</li>
-                <li><em>Post-Critical Flow Over Rough Cylinders</em> - Journal of Wind Engineering, 2024.</li>
-                <li><em>Surface Roughness and Drag</em> - Journal of Fluid Mechanics, 2023.</li>
-            </ul>
-        </section>
+
         <section class="content">
             <h2>Contact Information</h2>
             <p>For further details, please contact:</p>
@@ -119,9 +198,27 @@
             <p>Email: <a href="mailto:mark.thompson@monash.edu">mark.thompson@monash.edu</a></p>
         </section>
     </main>
+
     <footer>
-        <div class="wind-animation"></div>
         <p>&copy; 2024 Monash University | Advancing Cyclonic Wind Research</p>
     </footer>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const next = document.getElementById('next');
+        const prev = document.getElementById('prev');
+        let index = 0;
+
+        next.addEventListener('click', () => {
+            index = (index + 1) % 3; // Update for total slides
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        });
+
+        prev.addEventListener('click', () => {
+            index = (index - 1 + 3) % 3; // Update for total slides
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        });
+    </script>
 </body>
 </html>
+
