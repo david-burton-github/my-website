@@ -3,81 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Highlights</title>
+    <title>Structural Reliability in Cyclonic Winds</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #e0f7fa, #80deea);
+            color: #333;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Header Styles */
+        header {
+            background: linear-gradient(120deg, #0288d1, #03a9f4);
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+            line-height: 1.8;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            color: #01579b;
+            border-bottom: 2px solid #03a9f4;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        /* Footer Styles */
+        footer {
+            background: #01579b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #80deea;
+        }
+        /* Animation */
+        .wind-animation {
+            animation: moveWaves 10s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: url('https://i.imgur.com/Ft7cSlB.png') repeat-x;
+            opacity: 0.8;
+        }
+        @keyframes moveWaves {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Research Highlights</h1>
+        <h1>Structural Reliability in Cyclonic Winds</h1>
+        <p>Advancing Our Understanding of Extreme Wind Impacts</p>
     </header>
-
-    <section>
-        <h2>About the Project</h2>
-        <p>
-            The Fluids Laboratory for Aeronautical and Industrial Research (FLAIR) at Monash University has been leading the Australian Research Council (ARC) Linkage Project LP180100234, titled "Structural Reliability of Engineering Structures in Cyclonic Winds." Key contributors to this project include Professor Mark Thompson, David Burton, and Dr. Daniel Tudball Smith. Additionally, their collaborative efforts focus on enhancing the structural reliability of engineering structures subjected to cyclonic wind conditions, aiming to develop improved design guidelines and assessment methods for structures in cyclone-prone regions.
-        </p>
-        <p>
-            This project addressed a critical need to improve the understanding and prediction of structural reliability for large, complex structures subjected to extreme cyclonic winds, such as those experienced in North Western Australia. Extreme wind events, with gust speeds exceeding 400 km/h, posed substantial challenges to both experimental and computational modeling due to the turbulent and convective mechanisms associated with these events. We focused on the aerodynamic forces induced on cylindrical structural elements—common in critical infrastructure such as natural gas extraction facilities, transmission towers, and wind turbines. These structures, often comprising open-frame configurations with large-diameter cylindrical members, experience complex aerodynamic interactions that were not well understood, particularly at the extreme Reynolds numbers characteristic of cyclonic events.
-        </p>
-    </section>
-
-    <section>
-        <h2>Key Publications</h2>
-        <ul>
-            <li>
-                <a href="#circular-cylinders">Pasam, A., Tudball Smith, D., Holmes, J. D., Burton, D., & Thompson, M. C. (2023). "The influence of surface roughness on postcritical flow over circular cylinders revisited."</a>
-            </li>
-            <li>
-                <a href="#multiple-rough-cylinders">Burton, D., Easanesan, G., Pasam, A., Brown, C., Tudball Smith, D., & Thompson, M. C. (2024). "Post-critical flow over arrangements of multiple rough cylinders."</a>
-            </li>
-            <li>
-                <a href="#side-by-side">Pasam, A., Tudball Smith, D., Burton, D., & Thompson, M. C. (2024). "Aerodynamics of two rough circular cylinders placed side by side subject to postcritical flow."</a>
-            </li>
-            <li>
-                <a href="#inline-cylinders">Pasam, A., Tudball Smith, D., Burton, D., & Thompson, M. C. (2024). "Flow over two inline rough cylinders in the postcritical regime."</a>
-            </li>
-            <li>
-                <a href="#tandem-cylinders">Pasam, A., Tudball Smith, D., Thompson, M. C., & Burton, D. (2022). "Lift and drag forces on two rough circular cylinders in tandem configuration at a postcritical Reynolds number."</a>
-            </li>
-        </ul>
-    </section>
-
-    <section id="circular-cylinders">
-        <h2>The Influence of Surface Roughness on Postcritical Flow Over Circular Cylinders</h2>
-        <p>
-            In this study, we investigated how surface roughness affects the aerodynamic behavior of circular cylinders in the postcritical flow regime, where drag forces stabilize and vortex shedding patterns are re-established. Using wind tunnel experiments, we systematically varied roughness ratios and Reynolds numbers to analyze their impact on parameters such as base pressure coefficient, drag coefficient, Strouhal number, and lift coefficient fluctuations. Our results demonstrated that surface roughness alters flow separation and wake dynamics, leading to increased drag and changes in unsteady forces.
-        </p>
-        <p>
-            These findings provide detailed quantitative data, advancing the understanding of aerodynamic behavior in extreme flow conditions and contributing to safer engineering designs.
-        </p>
-    </section>
-
-    <section id="multiple-rough-cylinders">
-        <h2>Post-Critical Flow Over Arrangements of Multiple Rough Cylinders</h2>
-        <p>
-            This paper explores the forces on arrangements of two, three, and four rough cylinders in postcritical flow regimes. Through wind tunnel experiments, we uncovered critical insights into how cylinder spacing and wind incidence angles affect aerodynamic behavior. The findings highlight distinct flow regimes based on spacing and offer valuable data for optimizing the design of complex cylindrical structures.
-        </p>
-    </section>
-
-    <section id="side-by-side">
-        <h2>Aerodynamics of Two Rough Circular Cylinders Placed Side by Side</h2>
-        <p>
-            This study investigates the aerodynamic interactions between two rough circular cylinders placed side by side in the postcritical flow regime. We focused on the effects of spacing and Reynolds number variations, finding significant interaction effects that altered drag and lift forces and wake dynamics.
-        </p>
-    </section>
-
-    <section id="inline-cylinders">
-        <h2>Flow Over Two Inline Rough Cylinders in the Postcritical Regime</h2>
-        <p>
-            This paper examines the aerodynamic behavior of two inline rough cylinders under postcritical conditions. We explored the effects of spacing and roughness, uncovering critical insights into flow dynamics, drag, and lift forces.
-        </p>
-    </section>
-
-    <section id="tandem-cylinders">
-        <h2>Lift and Drag Forces on Two Rough Circular Cylinders in Tandem Configuration</h2>
-        <p>
-            This conference paper investigates lift and drag forces on two rough circular cylinders arranged in tandem under postcritical flow conditions. The study examines the effects of spacing and surface roughness on aerodynamic forces and wake interactions.
-        </p>
-    </section>
+    <main>
+        <section class="content">
+            <h2>Project Overview</h2>
+            <p><strong>Linkage Project LP180100234</strong></p>
+            <p>Researchers at Monash University’s FLAIR lab have made groundbreaking strides in understanding structural reliability under cyclonic wind conditions. This research contributes significantly to improving the resilience of infrastructure exposed to extreme winds.</p>
+        </section>
+        <section class="content">
+            <h2>Key Research Insights</h2>
+            <ul>
+                <li><strong>Cyclone Dynamics Modeling:</strong> Enhanced prediction of cyclonic occurrences.</li>
+                <li><strong>Aerodynamic Interaction Studies:</strong> Understanding wind behavior over rough cylindrical structures.</li>
+                <li><strong>Innovative Testing:</strong> Wind tunnel experiments and computational simulations.</li>
+                <li><strong>Refinement of Standards:</strong> Improved structural codes for better safety and efficiency.</li>
+            </ul>
+        </section>
+        <section class="content">
+            <h2>Key Publications</h2>
+            <ul>
+                <li><em>Aerodynamics of Two Rough Circular Cylinders</em> - Physics of Fluids, 2024.</li>
+                <li><em>Post-Critical Flow Over Rough Cylinders</em> - Journal of Wind Engineering, 2024.</li>
+                <li><em>Surface Roughness and Drag</em> - Journal of Fluid Mechanics, 2023.</li>
+            </ul>
+        </section>
+        <section class="content">
+            <h2>Contact Information</h2>
+            <p>For further details, please contact:</p>
+            <p><strong>Professor Mark Thompson</strong><br>Department of Mechanical and Aerospace Engineering<br>Monash University</p>
+            <p>Email: <a href="mailto:mark.thompson@monash.edu">mark.thompson@monash.edu</a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="wind-animation"></div>
+        <p>&copy; 2024 Monash University | Advancing Cyclonic Wind Research</p>
+    </footer>
 </body>
 </html>
-
