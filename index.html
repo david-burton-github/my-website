@@ -84,72 +84,6 @@
             padding-bottom: 5px;
         }
 
-        /* Slideshow Styles */
-        .slideshow {
-            position: relative;
-            max-width: 100%;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 400%;
-        }
-
-        .slide {
-            width: 100%;
-            flex-shrink: 0;
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-            font-size: 1.5em;
-        }
-
-        .slide:nth-child(1) {
-            background: url('https://i.imgur.com/WrKz38q.jpg') no-repeat;
-        }
-
-        .slide:nth-child(2) {
-            background: url('https://i.imgur.com/RUdfjiV.jpg') no-repeat;
-        }
-
-        .slide:nth-child(3) {
-            background: url('https://i.imgur.com/wd0c3dE.jpg') no-repeat;
-        }
-
-        .slideshow-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .control {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            font-size: 1.5em;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-            transition: background 0.3s;
-        }
-
-        .control:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-
         /* Footer Styles */
         footer {
             background: #1b2838;
@@ -173,103 +107,57 @@
 <body>
     <header>
         <div class="wind-animation"></div>
-        <h1>Structural Reliability in Cyclonic Winds Website</h1>
-        <p>Advancing Our Understanding of Extreme Wind Impacts</p>
+        <h1>Structural Reliability in Cyclonic Winds</h1>
+        <p>Monash University: Advancing Our Understanding of Cyclonic Winds</p>
     </header>
 
     <main>
         <section class="content">
-            <h2>Project Update</h2>
-            
-            <p><strong>Linkage Project LP180100234</strong></p>
-            <p><strong>December 2024</strong></p>
-
-            <p>Researchers at Monash University's Fluids Laboratory for Aeronautical and Industrial Research (FLAIR), within the Department of Mechanical and Aerospace Engineering, have made significant steps in the study of structural reliability under extreme cyclonic wind conditions. This research forms part of the Australian Research Council (ARC) Linkage Project LP180100234, titled "Structural Reliability of Engineering Structures in Cyclonic Winds."
-
-                Led by Professor Mark Thompson and David Burton, the project addresses critical gaps in understanding the effects of cyclonic winds—capable of gust speeds exceeding 400 km/h—on large and complex engineering structures. Such structures, including natural gas facilities, wind turbines, bridges, skyscrapers and transmission towers, often incorporate cylindrical elements or shapes that create particular challenges when predicting these extreme forces.
-
-                A Multi-Faceted Approach to Structural Reliability
-The team has adopted a multi-dimensional methodology encompassing:
-Cyclone Dynamics Modeling: Improved prediction of cyclonic occurrences and their dynamic characteristics.
-Aerodynamic Interaction Studies: Exploration of how wind flows over rough cylindrical structures at very high Reynolds numbers, focusing on complex interactions in configurations commonly seen in critical infrastructure.
-Innovative Testing and Simulation: Integration of advanced wind tunnel experiments and computational simulations to replicate the intricate behaviors of wind and structural interactions.
-Refinement of Reliability Estimates: Application and comparison of findings to existing codes and standards to enhance reliability predictions and improve safety.
-
-                Key Findings and Implications
-The project has yielded critical insights into turbulent wind profiles and aerodynamic forces on cylindrical structures. Highlights include:
-Unsteady Aerodynamic Behavior: Identification of flow separation and wake dynamics that increase structural loads under postcritical conditions.
-Surface Roughness Effects: Demonstration of how roughness amplifies forces and alters aerodynamic stability.
-Improved Predictive Models: Development of integrated models for assessing structural vulnerability with unprecedented accuracy, balancing safety and cost-effectiveness.
-These findings directly impact the resilience of multi-billion-dollar infrastructure assets in cyclone-prone regions, ensuring better safety outcomes while reducing unnecessary costs from overdesign.
-Key Research Outputs
-This research has resulted in several notable publications in leading journals, including:
-Pasam, A., Tudball Smith, D., Burton, D., & Thompson, M. C. (2024). "Aerodynamics of two rough circular cylinders placed side by side subject to postcritical flow." Physics of Fluids. (Accepted on December 3, 2024).
-Burton, D., Easanesan, G., Pasam, A., Brown, C., Tudball Smith, D., & Thompson, M. C. (2024). Post-critical flow over arrangements of multiple rough cylinders. Journal of Wind Engineering and Industrial Aerodynamics. (Accepted on 18 November 2024).
-Pasam, A., Tudball Smith, D., Holmes, J. D., Burton, D., & Thompson, M. C. (2023). "The influence of surface roughness on postcritical flow over circular cylinders revisited." Journal of Fluid Mechanics, 975, A36. [https://doi.org/10.1017/jfm.2023.846]
-Pasam, A., Tudball Smith, D., Burton, D., & Thompson, M. C. (2024). "Flow over two inline rough cylinders in the postcritical regime." Physics of Fluids, 36, 095145. [https://doi.org/10.1063/5.0139995]
-Pasam, A., Tudball Smith, D., Thompson, M. C., & Burton, D. (2022). Lift and drag forces on two rough circular cylinders in tandem configuration at a postcritical Reynolds number. 23rd Australasian Fluid Mechanics Conference, Sydney, Australia, December 2022.
-These and other publications have advanced our understanding of the extreme aerodynamic phenomena associated with cyclonic winds.
-Looking Ahead
-By combining experimental, computational, and analytical expertise, this research sets the stage for further innovation in understanding cyclonic winds and ultimately the design of robust, efficient, and reliable engineering structures. As this project comes to an end we continue to work on further publications.
-For further information, please contact:
-Professor Mark Thompson
-Department of Mechanical and Aerospace Engineering
-Monash University
-Email: mark.thompson@monash.edu
-
-                </p>
-        </section>
-
-        <section class="slideshow">
-            <div class="slides">
-                <div class="slide">Cyclonic Winds - Dynamics and Impact</div>
-                <div class="slide">Advanced Testing and Simulation</div>
-                <div class="slide">Safer Structural Designs</div>
-            </div>
-            <div class="slideshow-controls">
-                <button class="control" id="prev">&#10094;</button>
-                <button class="control" id="next">&#10095;</button>
-            </div>
+            <h2>Project Overview</h2>
+            <p><strong>Update: December 2024</strong></p>
+            <p>Researchers at Monash University's Fluids Laboratory for Aeronautical and Industrial Research (FLAIR), within the Department of Mechanical and Aerospace Engineering, have made significant strides in the study of structural reliability under extreme cyclonic wind conditions. This research forms part of the Australian Research Council (ARC) Linkage Project LP180100234, titled "Structural Reliability of Engineering Structures in Cyclonic Winds."</p>
+            <p>Led by Professor Mark Thompson and David Burton, the project addresses critical gaps in understanding the effects of cyclonic winds—capable of gust speeds exceeding 400 km/h—on large and complex engineering structures. Such structures, including natural gas facilities, wind turbines, bridges, skyscrapers, and transmission towers, often incorporate cylindrical elements or shapes that create particular challenges when predicting these extreme forces.</p>
         </section>
 
         <section class="content">
-            <h2>Key Research Insights</h2>
+            <h2>A Multi-Faceted Approach to Structural Reliability</h2>
             <ul>
-                <li><strong>Cyclone Dynamics Modeling:</strong> Enhanced prediction of cyclonic occurrences.</li>
-                <li><strong>Aerodynamic Interaction Studies:</strong> Understanding wind behavior over rough cylindrical structures.</li>
-                <li><strong>Innovative Testing:</strong> Wind tunnel experiments and computational simulations.</li>
-                <li><strong>Refinement of Standards:</strong> Improved structural codes for better safety and efficiency.</li>
+                <li><strong>Cyclone Dynamics Modeling:</strong> Improved prediction of cyclonic occurrences and their dynamic characteristics.</li>
+                <li><strong>Aerodynamic Interaction Studies:</strong> Exploration of how wind flows over rough cylindrical structures at very high Reynolds numbers, focusing on complex interactions in configurations commonly seen in critical infrastructure.</li>
+                <li><strong>Innovative Testing and Simulation:</strong> Integration of advanced wind tunnel experiments and computational simulations to replicate the intricate behaviors of wind and structural interactions.</li>
+                <li><strong>Refinement of Reliability Estimates:</strong> Application and comparison of findings to existing codes and standards to enhance reliability predictions and improve safety.</li>
             </ul>
         </section>
 
         <section class="content">
-            <h2>Contact Information</h2>
-            <p>For further details, please contact:</p>
-            <p><strong>Professor Mark Thompson</strong><br>Department of Mechanical and Aerospace Engineering<br>Monash University</p>
-            <p>Email: <a href="mailto:mark.thompson@monash.edu">mark.thompson@monash.edu</a></p>
+            <h2>Key Findings and Implications</h2>
+            <ul>
+                <li><strong>Unsteady Aerodynamic Behavior:</strong> Identification of flow separation and wake dynamics that increase structural loads under postcritical conditions.</li>
+                <li><strong>Surface Roughness Effects:</strong> Demonstration of how roughness amplifies forces and alters aerodynamic stability.</li>
+                <li><strong>Improved Predictive Models:</strong> Development of integrated models for assessing structural vulnerability with unprecedented accuracy, balancing safety and cost-effectiveness.</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2>Key Research Outputs</h2>
+            <ul>
+                <li><strong>Pasam, A., Tudball Smith, D., Burton, D., & Thompson, M. C. (2024):</strong> "Aerodynamics of two rough circular cylinders placed side by side subject to postcritical flow." <em>Physics of Fluids</em>. (Accepted on December 3, 2024).</li>
+                <li><strong>Burton, D., Easanesan, G., Pasam, A., et al. (2024):</strong> "Post-critical flow over arrangements of multiple rough cylinders." <em>Journal of Wind Engineering and Industrial Aerodynamics</em>. (Accepted on November 18, 2024).</li>
+                <li><strong>Pasam, A., Tudball Smith, D., Holmes, J. D., et al. (2023):</strong> "The influence of surface roughness on postcritical flow over circular cylinders revisited." <em>Journal of Fluid Mechanics</em>, 975, A36. [<a href="https://doi.org/10.1017/jfm.2023.846">DOI</a>]</li>
+                <li><strong>Pasam, A., Tudball Smith, D., Burton, D., & Thompson, M. C. (2024):</strong> "Flow over two inline rough cylinders in the postcritical regime." <em>Physics of Fluids</em>, 36, 095145. [<a href="https://doi.org/10.1063/5.0139995">DOI</a>]</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h2>Looking Ahead</h2>
+            <p>By combining experimental, computational, and analytical expertise, this research sets the stage for further innovation in understanding cyclonic winds and the design of robust, efficient, and reliable engineering structures. As this project comes to an end, we continue to work on further publications.</p>
+            <p><strong>For further information, please contact:</strong></p>
+            <p><strong>Professor Mark Thompson</strong><br>Department of Mechanical and Aerospace Engineering<br>Monash University<br>Email: <a href="mailto:mark.thompson@monash.edu">mark.thompson@monash.edu</a></p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Monash University | Advancing Cyclonic Wind Research</p>
     </footer>
-
-    <script>
-        const slides = document.querySelector('.slides');
-        const next = document.getElementById('next');
-        const prev = document.getElementById('prev');
-        let index = 0;
-
-        next.addEventListener('click', () => {
-            index = (index + 1) % 3; // Update for total slides
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        });
-
-        prev.addEventListener('click', () => {
-            index = (index - 1 + 3) % 3; // Update for total slides
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        });
-    </script>
 </body>
 </html>
-
